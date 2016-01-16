@@ -8,6 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="127*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Login_with_Facebook" Content="Login with Facebook" HorizontalAlignment="Left" Height="55" Margin="86,468,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="skipLogin" HorizontalAlignment="Left" Margin="86,575,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Skip login" VerticalAlignment="Top" Width="200" TextAlignment="Center"/>
 
     </Grid>
 </Page>
