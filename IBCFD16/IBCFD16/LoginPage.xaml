@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="IBCFD16.MainPage"
+    x:Class="IBCFD16.LoginPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:IBCFD16"
@@ -12,7 +12,7 @@
             <RowDefinition/>
             <RowDefinition Height="127*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="Login_with_Facebook" Content="Login with Facebook" HorizontalAlignment="Left" Height="55" Margin="86,468,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="Login_with_Facebook" Content="Login with Facebook" HorizontalAlignment="Left" Height="55" Margin="86,468,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Login_with_Facebook_Click"/>
         <TextBlock x:Name="skipLogin" HorizontalAlignment="Left" Margin="86,575,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Skip login" VerticalAlignment="Top" Width="200" TextAlignment="Center"/>
 
     </Grid>
