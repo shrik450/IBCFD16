@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Microsoft.Data.Entity;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -30,6 +31,10 @@ namespace IBCFD16
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new UserDataContext())
+            {
+                db.Database.Migrate();
+            }
         }
 
         /// <summary>

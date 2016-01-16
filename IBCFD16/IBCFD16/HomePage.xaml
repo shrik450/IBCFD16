@@ -5,10 +5,11 @@
     xmlns:local="using:IBCFD16"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Loaded="Page_Loaded">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot x:Name="HomePagePivot" Title="AppName">
+        <Pivot x:Name="HomePagePivot" Title="AppName" FontSize="24">
             <PivotItem Header="How are you feeling today?">
                 <ComboBox x:Name="symptomsBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="316"/>
             </PivotItem>
