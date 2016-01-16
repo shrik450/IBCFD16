@@ -8,6 +8,15 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot x:Name="HomePagePivot" Title="AppName">
+            <PivotItem Header="How are you feeling today?">
+                <ComboBox x:Name="symptomsBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="316"/>
+            </PivotItem>
+            <PivotItem Header="Your Medicines">
+                <Grid/>
+            </PivotItem>
+            <PivotItem Header="Doctors near you" Margin="24,10,0,-10"/>
+        </Pivot>
 
     </Grid>
 </Page>

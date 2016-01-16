@@ -29,7 +29,7 @@ namespace IBCFD16
 
         private void Login_with_Facebook_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame currentFrame = Window.Current.Content as Frame;            
         }
     }
 }
