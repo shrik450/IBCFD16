@@ -10,14 +10,21 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Pivot x:Name="HomePagePivot" Title="AppName" FontSize="24">
-            <PivotItem Header="How are you feeling today?">
-                <ComboBox x:Name="symptomsBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="316"/>
-            </PivotItem>
+            <PivotItem Header="How are you feeling today?" Margin="12,0,59,0" Height="58" VerticalAlignment="Top">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <ComboBox x:Name="symptomsBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="260" Grid.Row="0"/>
+                    <ListView x:Name="listView" HorizontalAlignment="Left" Height="445" Margin="10,10,0,0" VerticalAlignment="Top" Width="270" Grid.Row="1"/>
+                </Grid>
+                </PivotItem>
             <PivotItem Header="Your Medicines">
                 <Grid/>
             </PivotItem>
             <PivotItem Header="Doctors near you" Margin="24,10,0,-10"/>
-        </Pivot>
+        </Pivot>      
 
     </Grid>
 </Page>
