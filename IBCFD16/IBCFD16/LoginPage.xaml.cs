@@ -31,5 +31,11 @@ namespace IBCFD16
         {
             Frame currentFrame = Window.Current.Content as Frame;            
         }
+
+        private void skipLoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame currentFrame = Window.Current.Content as Frame;
+            currentFrame.Navigate(typeof(HomePage), "nologin");
+        }
     }
 }

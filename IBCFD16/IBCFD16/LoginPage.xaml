@@ -13,7 +13,7 @@
             <RowDefinition Height="127*"/>
         </Grid.RowDefinitions>
         <Button x:Name="Login_with_Facebook" Content="Login with Facebook" HorizontalAlignment="Left" Foreground="White" Height="55" Margin="86,468,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Login_with_Facebook_Click" Background="#FF3B5998"/>
-        <HyperlinkButton x:Name="skipLoginButton" Content="Skip Login" HorizontalAlignment="Left" Margin="150,528,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16"/>
+        <HyperlinkButton x:Name="skipLoginButton" Content="Skip Login" HorizontalAlignment="Left" Margin="150,528,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" Click="skipLoginButton_Click"/>
 
     </Grid>
 </Page>
